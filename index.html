@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alessandra Casole" />
+    <!-- <meta name="description"
+        content="Esplora il mio portfolio di progetti Front-end e le mie abilità. Scopri come posso aiutarti a migliorare la presenza online attraverso le mie competenze."> -->
+    <meta
+      property="og:title"
+      content="Valeria Pappalardo | VR Designer Portfolio Website"
+    />
+    <!-- <meta property="og:description"
+        content="Esplora il mio portfolio di progetti Front-end. Scopri come posso aiutarti a migliorare la presenza online attraverso le mie competenze."> -->
+    <meta
+      property="og:image"
+      content="https://alessandra-casole.github.io/assets/img/og-img.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="628" />
+    <meta property="og:url" content="https://alessandra-casole.github.io/" />
+    <meta property="og:type" content="website" />
+    <title>Valeria Pappardo | VR Designer Portfolio Website</title>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/img/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Bootstrap v.5.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome v.6.4.2-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="fixed-top">
+      <!-- Navbar -->
+      <nav
+        class="navbar py-3 navbar-expand-lg bg-white"
+        aria-label="offcanvas navbar"
+        role="navigation"
+        id="custom-nav"
+      >
+        <div class="container-xl px-sm-3 px-md-4 px-lg-5 px-xl-0">
+          <a class="navbar-brand" href="/"
+            ><img
+              src="./assets/img/logo.png"
+              alt="name of site - Home"
+              width="50"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbarLight"
+            aria-controls="offcanvasNavbarLight"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Offcanvas Menu -->
+          <div
+            class="offcanvas offcanvas-end w-100"
+            tabindex="-1"
+            id="offcanvasNavbarLight"
+            aria-labelledby="offcanvasNavbarLightLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close ms-auto mt-1 me-2 me-sm-4"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="offcanvas-body d-flex justify-content-center align-items-center"
+            >
+              <ul
+                class="navbar-nav text-center ms-lg-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-center fw-bolder"
+              >
+                <li class="nav-item me-lg-2" data-bs-dismiss="offcanvas">
+                  <a
+                    class="nav-link active text-uppercase"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item me-lg-2" data-bs-dismiss="offcanvas">
+                  <a class="nav-link text-uppercase" href="#about">About</a>
+                </li>
+                <li class="nav-item me-lg-1" data-bs-dismiss="offcanvas">
+                  <a class="nav-link text-uppercase" href="#services"
+                    >Services</a
+                  >
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item me-lg-2 dropdown">
+                  <a
+                    class="nav-link d-inline text-uppercase text-decoration-none ps-3 ps-lg-2 pe-1"
+                    href="#projects"
+                    >Projects</a
+                  >
+                  <a
+                    class="dropdown-toggle me-lg-1"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    ><i class="fa-solid fa-angle-down"></i
+                  ></a>
+                  <!-- Dropdown menu -->
+                  <ul
+                    class="dropdown-menu border-0 text-black text-center text-lg-left"
+                  >
+                    <li data-bs-dismiss="offcanvas">
+                      <a
+                        class="dropdown-item text-uppercase"
+                        href="./projects/house-configurator/"
+                        target="_blank"
+                        rel="noopener"
+                        >House Configurator</a
+                      >
+                    </li>
+                    <li data-bs-dismiss="offcanvas">
+                      <a
+                        class="dropdown-item text-uppercase"
+                        href="./projects/esplora-marte/"
+                        target="_blank"
+                        rel="noopener"
+                        >Esplora Marte</a
+                      >
+                    </li>
+                    <li data-bs-dismiss="offcanvas">
+                      <a
+                        class="dropdown-item text-uppercase"
+                        href="https://www.youtube.com/watch?v=eqkiBcqqig8"
+                        target="_blank"
+                        rel="noopener"
+                        >MetaSea</a
+                      >
+                    </li>
+                    <li data-bs-dismiss="offcanvas">
+                      <a
+                        class="dropdown-item text-uppercase"
+                        href="https://www.digitalatom.it/car-configurator-interactive-3d-customizer/"
+                        target="_blank"
+                        rel="noopener"
+                        >Car Configurator</a
+                      >
+                    </li>
+                    <li data-bs-dismiss="offcanvas">
+                      <a
+                        class="dropdown-item text-uppercase"
+                        href="./projects/moonhome/"
+                        target="_blank"
+                        rel="noopener"
+                        >MoonHome</a
+                      >
+                    </li>
+                    <li data-bs-dismiss="offcanvas">
+                      <a
+                        class="dropdown-item text-uppercase"
+                        href="./projects/virtuality/"
+                        target="_blank"
+                        rel="noopener"
+                        >Virtuality</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item me-lg-2" data-bs-dismiss="offcanvas">
+                  <a class="nav-link text-uppercase" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="./index-ita.html"
+                    >It</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main
+      data-bs-spy="scroll"
+      data-bs-target="#custom-nav"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example"
+      tabindex="0"
+    >
+      <!-- Hero section -->
+      <section
+        class="hero-section position-relative d-flex align-items-center text-center min-vh-100"
+      >
+        <div class="overlay position-absolute top-0 w-100 h-100"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="text-white hero-txt">Welcome to my website</h1>
+            </div>
+          </div>
+          <!-- Scroll down -->
+          <div class="row mt-lg-5">
+            <div class="col">
+              <a
+                class="scroll-down btn border-0 d-none d-lg-inline-block"
+                href="#about"
+                role="button"
+                title="Scroll down"
+                ><i class="fa-solid fa-chevron-down text-white"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section pt-5" id="about">
+        <div class="container pt-lg-5 gx-5">
+          <div class="row mb-5">
+            <div class="col text-center z-index-30">
+              <h2 class="text-white font-1 text-center">About me</h2>
+              <h4
+                class="text-white text-center small-txt d-inline-flex align-items-center"
+                id="btnSect"
+              >
+                <i class="fa-solid fa-plus btn-sct me-2" id="openCloseBtn"></i>
+                View more
+              </h4>
+            </div>
+          </div>
+
+          <div class="row px-2 justify-content-between">
+            <!-- Pic  -->
+            <div class="col">
+              <div class="portfolio-pic position-relative">
+                <img
+                  src="./assets/img/viewer-img.png"
+                  id="portfolioImg"
+                  alt="Valeria Pappalardo"
+                />
+                <!-- Light Point-->
+                <img
+                  class="portfolio-shadow position-absolute z-n1"
+                  src="./assets/img/light-point.png"
+                  alt="light point"
+                />
+              </div>
+            </div>
+            <div class="col-md d-flex flex-column mt-5">
+              <div class="about-txt text-white">
+                <h3 class="text-start">Valeria Pappalardo</h3>
+                <h4 class="sub-txt text-white pt-1 pt-lg-2text-start">
+                  Technical Artist / VR developer
+                </h4>
+              </div>
+
+              <!-- Download Button  -->
+
+              <!-- Sistemare questa cosa facendolo con le classi di bootstrap -->
+              <div class="on-light mt-5 mt-lg-auto">
+                <!-- CAMBIARE QUESTA COSA TOGLIENDO O LA A O IL BUTTON -->
+                <a href="#" class="text-decoration-none" download>
+                  <button
+                    class="border-gradient position-relative rounded-pill py-4 btn mt-lg-4 px-5 mt-auto mb-3 mb-lg-5 text-white"
+                    type="button"
+                  >
+                    Download CV
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services Section -->
+      <section class="services-section pt-5" id="services">
+        <div class="services container pt-md-5 gx-5">
+          <div class="row mb-4 mb-md-5">
+            <div class="col text-center">
+              <h2 class="text-white font-1 text-center mb-2 mb-lg-5">
+                Services
+              </h2>
+              <h4 class="text-white pt-4 mb-lg-5 sub-txt">
+                Explore. Interact. Enjoy and learn more..
+              </h4>
+            </div>
+          </div>
+          <!-- Box Services -->
+          <div
+            class="row row-cols-1 row-cols-md-3 box-services pt-4 g-3 g-lg-0"
+          >
+            <div class="col">
+              <div class="card h-100 border-0 bg-transparent">
+                <img
+                  src="./assets/img/virtual-tour-icon.png"
+                  class="card-img-top mx-auto"
+                  alt="..."
+                />
+                <div class="card-body text-center p-0 p-lg-3">
+                  <p class="card-text text-uppercase text-white">
+                    virtual tour
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0 bg-transparent">
+                <img
+                  src="./assets/img/experiences-icon.png"
+                  class="card-img-top mx-auto"
+                  alt="..."
+                />
+                <div class="card-body text-center p-0 p-lg-3">
+                  <p class="card-text text-uppercase text-white">
+                    immersive & interactive experiences
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0 bg-transparent">
+                <img
+                  src="./assets/img/3D-icon.png"
+                  class="card-img-top mx-auto"
+                  alt="..."
+                />
+                <div class="card-body text-center p-0 p-lg-3">
+                  <p class="card-text text-uppercase text-white">
+                    3D configurator
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Section -->
+      <section class="projects-section py-5" id="projects">
+        <!-- eventualmente passarlo nuovamente a pt-lg-5 -->
+        <div class="projects container py-md-5 gx-5">
+          <div class="row mb-5">
+            <div class="col text-center">
+              <h2 class="text-white font-1 text-center mb-5">Projects</h2>
+            </div>
+          </div>
+
+          <!-- Projects -->
+          <div class="row row-cols-1 row-cols-md-2 g-5">
+            <div class="col">
+              <!-- Project 01  - House configurator-->
+              <div class="figure position-relative" id="house-configurator">
+                <img
+                  class="image-main"
+                  src="./assets/img/1_HouseConfigurator.png"
+                  alt="project-01"
+                />
+
+                <img
+                  class="image-hover position-absolute top-0 bottom-0"
+                  src="./assets/img/1_HouseConfigurator_hover.png"
+                  alt="project-01"
+                />
+
+                <div
+                  class="project-info-1 position-absolute top-0 bottom-0 text-center d-flex flex-column justify-content-center align-items-center w-100"
+                >
+                  <h4 class="mt-5 fw-semibold text-uppercase text-white">
+                    House configurator
+                  </h4>
+                  <p class="mx-4 mt-2 text-white">
+                    Immersive and interactive experience to explore and
+                    customize a house.
+                  </p>
+                  <div class="project-links text-center">
+                    <a
+                      href="./projects/house-configurator/"
+                      class="btn card-btn border-0 text-white"
+                      title="View details"
+                      role="button"
+                      ><i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project 02 - Esplora Marte -->
+            <div class="col">
+              <div class="figure position-relative" id="esplora-marte">
+                <img
+                  class="image-main"
+                  src="./assets/img/2_Marte.png"
+                  alt="project-02"
+                />
+
+                <img
+                  class="image-hover position-absolute top-0 bottom-0"
+                  src="./assets/img/2_Marte_hover.png"
+                  alt="project-02"
+                />
+
+                <div
+                  class="project-info-1 position-absolute top-0 bottom-0 text-center d-flex flex-column justify-content-center align-items-center w-100"
+                >
+                  <h4 class="mt-5 fw-semibold text-uppercase text-white">
+                    Esplora Marte
+                  </h4>
+                  <p class="mx-4 mt-2 text-white">
+                    Interactive virtual reality application to explore Mars.
+                  </p>
+                  <div class="project-links text-center">
+                    <a
+                      class="btn px-0 card-btn border-0 text-white"
+                      title="View details"
+                      role="button"
+                      href="./projects/esplora-marte/"
+                      ><i class="fa-solid fa-plus"></i>
+                    </a>
+                    <a
+                      class="btn card-btn border-0 text-white"
+                      href="https://udascienza.unich.it/?page_id=741"
+                      title="View website"
+                      role="button"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="Open external page"
+                      ><i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project 03 - Metasea -->
+            <div class="col">
+              <div class="figure position-relative" id="metasea">
+                <img
+                  class="image-main"
+                  src="./assets/img/3_MetaSea.png"
+                  alt="project-03"
+                />
+
+                <img
+                  class="image-hover position-absolute top-0 bottom-0"
+                  src="./assets/img/3_MetaSea_hover.png"
+                  alt="project-03"
+                />
+
+                <div
+                  class="project-info-1 position-absolute top-0 bottom-0 text-center d-flex flex-column justify-content-center align-items-center w-100"
+                >
+                  <h4 class="mt-5 fw-semibold text-uppercase text-white">
+                    Metasea
+                  </h4>
+                  <p class="mx-4 mt-2 text-white">
+                    Virtual Marine Museum to explore the seabed and interact
+                    with archaeological artifacts.
+                  </p>
+                  <div class="project-links text-center">
+                    <a
+                      href="https://www.youtube.com/watch?v=eqkiBcqqig8"
+                      class="btn px-0 card-btn border-0 text-white"
+                      title="View details"
+                      role="button"
+                      target="_blank"
+                      rel="noopener"
+                      ><i class="fa-solid fa-plus"></i>
+                    </a>
+                    <a
+                      class="btn card-btn border-0 text-white"
+                      href="https://www.digitalatom.it/metasea-a-virtual-underwater-adventure/"
+                      title="View website"
+                      role="button"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="Open external page"
+                      ><i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project 04 - Car configurator -->
+            <div class="col">
+              <div class="figure position-relative" id="car-configurator">
+                <img
+                  class="image-main"
+                  src="./assets/img/4_CarConfigurator.png"
+                  alt="project-04"
+                />
+
+                <img
+                  class="image-hover position-absolute top-0 bottom-0"
+                  src="./assets/img/4_carConfigurator_hover.png"
+                  alt="project-04"
+                />
+
+                <div
+                  class="project-info-1 position-absolute top-0 bottom-0 text-center d-flex flex-column justify-content-center align-items-center w-100"
+                >
+                  <h4 class="mt-5 fw-semibold text-uppercase text-white">
+                    Car Configurator
+                  </h4>
+                  <p class="mx-4 mt-2 text-white">
+                    Immersive and interactive experience to view and customize
+                    cars.
+                  </p>
+                  <div class="project-links text-center">
+                    <a
+                      class="btn card-btn border-0 text-white"
+                      href="https://www.digitalatom.it/car-configurator-interactive-3d-customizer/"
+                      title="View website"
+                      role="button"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="Open external page"
+                      ><i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project 05 - Moon home -->
+            <div class="col">
+              <div class="figure position-relative" id="moon-home">
+                <img
+                  class="image-main"
+                  src="./assets/img/5_MoonHome.png"
+                  alt="project-05"
+                />
+
+                <img
+                  class="image-hover position-absolute top-0 bottom-0"
+                  src="./assets/img/5_MoonHome_Hover.png"
+                  alt="project-05"
+                />
+
+                <div
+                  class="project-info-1 position-absolute top-0 bottom-0 text-center d-flex flex-column justify-content-center align-items-center w-100"
+                >
+                  <h4 class="mt-5 fw-semibold text-uppercase text-white">
+                    Moonhome
+                  </h4>
+                  <p class="mx-4 mt-2 text-white">
+                    Interactive virtual realty application to learn how to live
+                    on the Moon in the future.
+                  </p>
+                  <div class="project-links text-center">
+                    <a
+                      class="btn px-0 card-btn border-0 text-white"
+                      title="View details"
+                      role="button"
+                      ><i class="fa-solid fa-plus"></i>
+                    </a>
+                    <a
+                      class="btn card-btn border-0 text-white"
+                      href=""
+                      title="View code"
+                      role="button"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="Open external page"
+                      ><i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project 06 - Virtuality -->
+            <div class="col">
+              <div class="figure position-relative" id="virtuality">
+                <img
+                  class="image-main"
+                  src="./assets/img/6_Virtuality.png"
+                  alt="project-06"
+                />
+
+                <img
+                  class="image-hover position-absolute top-0 bottom-0"
+                  src="./assets/img/6_Virtuality_hover.png"
+                  alt="project-06"
+                />
+
+                <div
+                  class="project-info-1 position-absolute top-0 bottom-0 text-center d-flex flex-column justify-content-center align-items-center w-100"
+                >
+                  <h4 class="mt-5 fw-semibold text-uppercase text-white">
+                    Virtuality
+                  </h4>
+                  <p class="mx-4 mt-2 text-white">
+                    3D immersive environment inspired by Brett Leonard's film
+                    "Virtuality".
+                  </p>
+                  <div class="project-links text-center">
+                    <a
+                      class="btn card-btn border-0 text-white"
+                      title="View details"
+                      role="button"
+                      ><i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+
+      <section class="contact-section py-5" id="contact">
+        <div class="contact container pb-5 py-md-5 gx-5">
+          <div class="row mb-5">
+            <div class="col text-center">
+              <h2 class="text-white font-1 text-center mb-lg-5">Contact</h2>
+              <h4 class="text-white pt-4 mb-2 mb-md-5 mx-auto sub-txt">
+                If you are interested in what I do or want to deepen my
+                knowledge and skills, don't hesitate to contact me!
+              </h4>
+            </div>
+          </div>
+
+          <!-- Contact -->
+          <div class="row">
+            <div class="col">
+              <!-- Form -->
+              <form
+                method="post"
+                action=""
+                class="mx-auto needs-validation contact-form"
+                id="contactForm"
+                novalidate
+              >
+                <!-- Name -->
+                <div class="mb-3">
+                  <label for="name" class="form-label text-white">Name *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    aria-describedby="name"
+                    name="name"
+                    required
+                  />
+                </div>
+                <!-- Email -->
+                <div class="mb-3">
+                  <label for="email" class="form-label text-white"
+                    >E-mail *</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <!-- Message -->
+                <div class="mb-3">
+                  <label for="message" class="form-label text-white"
+                    >Message *</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <!-- Submit btn -->
+                <div class="on-light text-center">
+                  <button
+                    class="border-gradient position-relative rounded-pill py-4 btn mt-4 px-5 mb-3 text-white"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                  <p class="successMessage text-center">
+                    Message correctly sent!
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer-section py-4">
+      <p
+        class="text-center text-white mb-0 copy d-flex align-items-center justify-content-center"
+      >
+        &copy; 2023 Coded by
+        <a
+          href="https://alessandracasole-dev.com/"
+          title="Alessandra Casole's profile"
+        >
+          <img
+            src="./assets/img/Dev-logo.svg"
+            alt="Alessandra Casole"
+            width="25"
+            class="mx-1"
+        /></a>
+        All rights reserved.
+      </p>
+    </footer>
+    <!-- Script Bootstrap v.5.3-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Email JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!-- JS -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
