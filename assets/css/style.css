@@ -387,6 +387,14 @@ z-index: 2; */
 }
 
 /* 992px */
+
+@media (max-width: 991.98px) {
+  .navbar-nav,
+  .dropdown-item {
+    font-size: 1.1875rem;
+  }
+}
+
 @media (min-width: 992px) {
   .about-txt h3 {
     font-size: 3rem;
