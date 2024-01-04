@@ -1,28 +1,3 @@
-// Select btnSection to open new content at About Section
-
-// usare il toggle
-// btnSect.addEventListener("click", () => {
-//   // portfolioImg.src = "./assets/img/FotoProfilo.png";
-
-//   // Aggiunge la classe se non è presente e se è presente, la toglie
-//   // openCloseBtn.classList.toggle("fa-plus");
-//   // openCloseBtn.classList.toggle("fa-minus");
-
-//   // Se la classe è "fa-plus", al click devo : rimuoverla, aggiungere la classe "fa-minus" e cambiare il contenuto
-//   // Se invece la classe è "fa-minus", devo ritornare alla situazione precedente
-
-//   if (openCloseBtn.classList.contains("fa-plus")) {
-//     openCloseBtn.classList.remove("fa-plus");
-//     openCloseBtn.classList.add("fa-minus");
-//     portfolioImg.src = "./assets/img/FotoProfilo.png";
-//   } else if (openCloseBtn.classList.contains("fa-minus")) {
-//     openCloseBtn.classList.remove("fa-minus");
-//     openCloseBtn.classList.add("fa-plus");
-//     portfolioImg.src = "./assets/img/viewer-img.png";
-//   }
-
-// });
-
 btnSect.addEventListener("click", () => {
   openCloseBtn.classList.toggle("fa-plus");
   openCloseBtn.classList.toggle("fa-minus");
