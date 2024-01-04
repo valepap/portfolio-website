@@ -261,7 +261,8 @@ z-index: 2; */
 /* Services Section */
 
 .services-section,
-.contact-section {
+.contact-section,
+.carousel-section {
   background-image: url(../img/sfondo-servizi-copertina.webp);
   background-position: center center;
   background-repeat: no-repeat;
@@ -341,10 +342,6 @@ z-index: 2; */
 
 .carousel-section {
   margin-top: 4.7806rem;
-  background-image: url(../img/slider-01.webp);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .carousel {
@@ -384,7 +381,8 @@ z-index: 2; */
 /* 768px */
 @media (max-width: 767.98px) {
   .services-section,
-  .contact-section {
+  .contact-section,
+  .carousel-section {
     background-image: url(../img/sfondoSmartphone.webp);
   }
 }
