@@ -6,7 +6,7 @@
     <meta name="author" content="Alessandra Casole" />
     <meta
       name="description"
-      content="Esplora il mio portfolio di progetti VR e scopri il mondo immersivo che posso creare. Trasforma le tue idee in esperienze straordinarie."
+      content="Esplora il mio portfolio di progetti in VR. Scopri come posso aiutarti a trasformare delle idee in esperienze interattive coinvolgenti."
     />
     <meta
       property="og:title"
@@ -14,7 +14,7 @@
     />
     <meta
       property="og:description"
-      content="Esplora il mio portfolio di progetti VR e scopri il mondo immersivo che posso creare. Trasforma le tue idee in esperienze straordinarie."
+      content="Esplora il mio portfolio di progetti in VR. Scopri come posso aiutarti a trasformare delle idee in esperienze interattive coinvolgenti."
     />
     <meta
       property="og:image"
@@ -71,7 +71,7 @@
     <header class="fixed-top">
       <!-- Navbar -->
       <nav
-        class="navbar py-3 navbar-expand-lg bg-white"
+        class="navbar py-2 navbar-expand-lg bg-white"
         aria-label="offcanvas navbar"
         role="navigation"
         id="custom-nav"
@@ -81,7 +81,7 @@
             ><img
               src="./assets/img/logo.png"
               alt="name of site - Home"
-              width="50"
+              width="35"
           /></a>
           <button
             class="navbar-toggler"
@@ -209,8 +209,8 @@
                   <a class="nav-link text-uppercase" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase" href="./index-ita.html"
-                    >It</a
+                  <a class="nav-link text-uppercase" href="./index-ita.html">
+                    <i class="fa-solid fa-earth-americas"></i> It</a
                   >
                 </li>
               </ul>
@@ -280,18 +280,24 @@
                   alt="Valeria Pappalardo"
                 />
                 <!-- Light Point-->
-                <img
-                  class="portfolio-shadow position-absolute z-n1"
-                  src="./assets/img/light-point.png"
-                  alt="light point"
-                />
+                <picture>
+                  <source
+                    srcset="./assets/img/light-point.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="portfolio-shadow position-absolute z-n1"
+                    src="./assets/img/light-point.png"
+                    alt="light point"
+                  />
+                </picture>
               </div>
             </div>
             <div class="col-md d-flex flex-column mt-5">
               <div class="about-txt text-white">
                 <h3 class="text-start">Valeria Pappalardo</h3>
                 <h4 class="sub-txt text-white pt-1 pt-lg-2text-start">
-                  Technical Artist / VR developer
+                  Virtual Reality Designer
                 </h4>
               </div>
 
@@ -332,11 +338,18 @@
           >
             <div class="col">
               <div class="card h-100 border-0 bg-transparent">
-                <img
-                  src="./assets/img/virtual-tour-icon.png"
-                  class="card-img-top mx-auto"
-                  alt="..."
-                />
+                <picture class="text-center">
+                  <source
+                    srcset="./assets/img/virtual-tour-icon.webp"
+                    type="image/webp"
+                    class="card-img-top"
+                  />
+                  <img
+                    src="./assets/img/virtual-tour-icon.png"
+                    class="card-img-top mx-auto"
+                    alt="..."
+                  />
+                </picture>
                 <div class="card-body text-center p-0 p-lg-3">
                   <p class="card-text text-uppercase text-white">
                     virtual tour
@@ -346,11 +359,18 @@
             </div>
             <div class="col">
               <div class="card h-100 border-0 bg-transparent">
-                <img
-                  src="./assets/img/experiences-icon.png"
-                  class="card-img-top mx-auto"
-                  alt="..."
-                />
+                <picture class="text-center">
+                  <source
+                    srcset="./assets/img/experiences-icon.webp"
+                    type="image/webp"
+                    class="card-img-top mx-auto"
+                  />
+                  <img
+                    src="./assets/img/experiences-icon.png"
+                    class="card-img-top mx-auto"
+                    alt="..."
+                  />
+                </picture>
                 <div class="card-body text-center p-0 p-lg-3">
                   <p class="card-text text-uppercase text-white">
                     immersive & interactive experiences
@@ -360,11 +380,18 @@
             </div>
             <div class="col">
               <div class="card h-100 border-0 bg-transparent">
-                <img
-                  src="./assets/img/3D-icon.png"
-                  class="card-img-top mx-auto"
-                  alt="..."
-                />
+                <picture class="text-center">
+                  <source
+                    srcset="./assets/img/3D-icon.webp"
+                    type="image/webp"
+                    class="card-img-top mx-auto"
+                  />
+                  <img
+                    src="./assets/img/3D-icon.png"
+                    class="card-img-top mx-auto"
+                    alt="..."
+                  />
+                </picture>
                 <div class="card-body text-center p-0 p-lg-3">
                   <p class="card-text text-uppercase text-white">
                     3D configurator
@@ -391,17 +418,31 @@
             <div class="col">
               <!-- Project 01  - House configurator-->
               <div class="figure position-relative" id="house-configurator">
-                <img
-                  class="image-main"
-                  src="./assets/img/1_HouseConfigurator.png"
-                  alt="project-01"
-                />
+                <picture>
+                  <source
+                    srcset="./assets/img/1_HouseConfigurator.webp"
+                    type="image/webp"
+                    class="image-main"
+                  />
+                  <img
+                    class="image-main"
+                    src="./assets/img/1_HouseConfigurator.png"
+                    alt="project-01"
+                  />
+                </picture>
 
-                <img
-                  class="image-hover position-absolute top-0 bottom-0"
-                  src="./assets/img/1_HouseConfigurator_hover.png"
-                  alt="project-01"
-                />
+                <picture>
+                  <source
+                    srcset="./assets/img/1_HouseConfigurator_hover.webp"
+                    type="image/webp"
+                    class="image-hover position-absolute top-0 bottom-0"
+                  />
+                  <img
+                    class="image-hover position-absolute top-0 bottom-0"
+                    src="./assets/img/1_HouseConfigurator_hover.png"
+                    alt="project-01"
+                  />
+                </picture>
 
                 <div
                   class="project-info-1 position-absolute top-0 bottom-0 text-center d-flex flex-column justify-content-center align-items-center w-100"
@@ -428,17 +469,32 @@
             <!-- Project 02 - Esplora Marte -->
             <div class="col">
               <div class="figure position-relative" id="esplora-marte">
-                <img
-                  class="image-main"
-                  src="./assets/img/2_Marte.png"
-                  alt="project-02"
-                />
+                <picture>
+                  <source
+                    srcset="./assets/img/2_Marte.webp"
+                    type="image/webp"
+                    class="image-main"
+                  />
 
-                <img
-                  class="image-hover position-absolute top-0 bottom-0"
-                  src="./assets/img/2_Marte_hover.png"
-                  alt="project-02"
-                />
+                  <img
+                    class="image-main"
+                    src="./assets/img/2_Marte.png"
+                    alt="project-02"
+                  />
+                </picture>
+
+                <picture>
+                  <source
+                    srcset="./assets/img/2_Marte_hover.webp"
+                    type="image/webp"
+                    class="image-hover position-absolute top-0 bottom-0"
+                  />
+                  <img
+                    class="image-hover position-absolute top-0 bottom-0"
+                    src="./assets/img/2_Marte_hover.png"
+                    alt="project-02"
+                  />
+                </picture>
 
                 <div
                   class="project-info-1 position-absolute top-0 bottom-0 text-center d-flex flex-column justify-content-center align-items-center w-100"
@@ -474,17 +530,31 @@
             <!-- Project 03 - Metasea -->
             <div class="col">
               <div class="figure position-relative" id="metasea">
-                <img
-                  class="image-main"
-                  src="./assets/img/3_MetaSea.png"
-                  alt="project-03"
-                />
+                <picture>
+                  <source
+                    srcset="./assets/img/3_MetaSea.webp"
+                    type="image/webp"
+                    class="image-main"
+                  />
+                  <img
+                    class="image-main"
+                    src="./assets/img/3_MetaSea.png"
+                    alt="project-03"
+                  />
+                </picture>
 
-                <img
-                  class="image-hover position-absolute top-0 bottom-0"
-                  src="./assets/img/3_MetaSea_hover.png"
-                  alt="project-03"
-                />
+                <picture>
+                  <source
+                    srcset="./assets/img/3_MetaSea_hover.webp"
+                    type="image/webp"
+                    class="image-hover position-absolute top-0 bottom-0"
+                  />
+                  <img
+                    class="image-hover position-absolute top-0 bottom-0"
+                    src="./assets/img/3_MetaSea_hover.png"
+                    alt="project-03"
+                  />
+                </picture>
 
                 <div
                   class="project-info-1 position-absolute top-0 bottom-0 text-center d-flex flex-column justify-content-center align-items-center w-100"
@@ -523,17 +593,32 @@
             <!-- Project 04 - Car configurator -->
             <div class="col">
               <div class="figure position-relative" id="car-configurator">
-                <img
-                  class="image-main"
-                  src="./assets/img/4_CarConfigurator.png"
-                  alt="project-04"
-                />
+                <picture>
+                  <source
+                    srcset="./assets/img/4_CarConfigurator.webp"
+                    type="image/webp"
+                    class="image-main"
+                  />
+                  <img
+                    class="image-main"
+                    src="./assets/img/4_CarConfigurator.png"
+                    alt="project-04"
+                  />
+                </picture>
 
-                <img
-                  class="image-hover position-absolute top-0 bottom-0"
-                  src="./assets/img/4_carConfigurator_hover.png"
-                  alt="project-04"
-                />
+                <picture>
+                  <source
+                    srcset="./assets/img/4_carConfigurator_hover.webp"
+                    type="image/webp"
+                    class="image-hover position-absolute top-0 bottom-0"
+                  />
+
+                  <img
+                    class="image-hover position-absolute top-0 bottom-0"
+                    src="./assets/img/4_carConfigurator_hover.png"
+                    alt="project-04"
+                  />
+                </picture>
 
                 <div
                   class="project-info-1 position-absolute top-0 bottom-0 text-center d-flex flex-column justify-content-center align-items-center w-100"
@@ -563,17 +648,31 @@
             <!-- Project 05 - Moon home -->
             <div class="col">
               <div class="figure position-relative" id="moon-home">
-                <img
-                  class="image-main"
-                  src="./assets/img/5_MoonHome.png"
-                  alt="project-05"
-                />
+                <picture>
+                  <source
+                    srcset="./assets/img/5_MoonHome.webp"
+                    type="image/webp"
+                    class="image-main"
+                  />
+                  <img
+                    class="image-main"
+                    src="./assets/img/5_MoonHome.png"
+                    alt="project-05"
+                  />
+                </picture>
 
-                <img
-                  class="image-hover position-absolute top-0 bottom-0"
-                  src="./assets/img/5_MoonHome_Hover.png"
-                  alt="project-05"
-                />
+                <picture>
+                  <source
+                    srcset="./assets/img/5_MoonHome_Hover.webp"
+                    type="image/webp"
+                    class="image-hover position-absolute top-0 bottom-0"
+                  />
+                  <img
+                    class="image-hover position-absolute top-0 bottom-0"
+                    src="./assets/img/5_MoonHome_Hover.png"
+                    alt="project-05"
+                  />
+                </picture>
 
                 <div
                   class="project-info-1 position-absolute top-0 bottom-0 text-center d-flex flex-column justify-content-center align-items-center w-100"
@@ -609,17 +708,31 @@
             <!-- Project 06 - Virtuality -->
             <div class="col">
               <div class="figure position-relative" id="virtuality">
-                <img
-                  class="image-main"
-                  src="./assets/img/6_Virtuality.png"
-                  alt="project-06"
-                />
+                <picture>
+                  <source
+                    srcset="./assets/img/6_Virtuality.webp"
+                    type="image/webp"
+                    class="image-main"
+                  />
+                  <img
+                    class="image-main"
+                    src="./assets/img/6_Virtuality.png"
+                    alt="project-06"
+                  />
+                </picture>
 
-                <img
-                  class="image-hover position-absolute top-0 bottom-0"
-                  src="./assets/img/6_Virtuality_hover.png"
-                  alt="project-06"
-                />
+                <picture>
+                  <source
+                    srcset="./assets/img/6_Virtuality_hover.webp"
+                    type="image/webp"
+                    class="image-hover position-absolute top-0 bottom-0"
+                  />
+                  <img
+                    class="image-hover position-absolute top-0 bottom-0"
+                    src="./assets/img/6_Virtuality_hover.png"
+                    alt="project-06"
+                  />
+                </picture>
 
                 <div
                   class="project-info-1 position-absolute top-0 bottom-0 text-center d-flex flex-column justify-content-center align-items-center w-100"

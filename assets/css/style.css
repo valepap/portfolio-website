@@ -84,9 +84,8 @@ z-index: 2; */
 /* Hero Section */
 
 .hero-section {
-  /* Aggiungerlo di base, togliendolo da desktop */
-  margin-top: 4.7806rem;
-  background-image: url(../img/hero-img.png);
+  margin-top: 3.42rem;
+  background-image: url(../img/hero-img.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -210,7 +209,7 @@ z-index: 2; */
 
 .on-light .btn {
   font-size: 1.0437rem;
-  background-image: url("../img/light-point.png");
+  background-image: url(../img/light-point.webp);
   background-size: 200%;
   background-position: center center;
   transition: 0.5s ease;
@@ -254,7 +253,7 @@ z-index: 2; */
 
 .services-section,
 .contact-section {
-  background-image: url(../img/sfondo-servizi-copertina.png);
+  background-image: url(../img/sfondo-servizi-copertina.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -326,21 +325,17 @@ z-index: 2; */
 
 .successMessage {
   display: none;
-  /* color: #32b832; */
   color: #198754;
 }
 
 /* Carousel section */
 
-.carousel-body {
-  background-image: url(../img/sfondoSlider.png);
+.carousel-section {
+  margin-top: 4.7806rem;
+  background-image: url(../img/slider-01.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.carousel-section {
-  margin-top: 4.7806rem;
 }
 
 .carousel {
@@ -369,15 +364,22 @@ z-index: 2; */
 /* 576px */
 @media (min-width: 576px) {
   .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236AD6F7'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   }
 
   .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236AD6F7'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
   }
 }
 
 /* 768px */
+/* @media (max-width: 767.98px) {
+  .services-section,
+  .contact-section {
+    background-image: url(../img/sfondoSmartphone.webp);
+  }
+} */
+
 @media (min-width: 768px) {
   .box-services {
     padding-bottom: 14rem;
@@ -421,6 +423,15 @@ z-index: 2; */
 
   .carousel-control-next {
     right: -15%;
+  }
+}
+
+/* 1080px */
+@media (min-width: 1080px) {
+  .hero-section,
+  .carousel-section {
+    background-position: initial;
+    background-size: 100% 100%;
   }
 }
 
