@@ -249,6 +249,15 @@ z-index: 2; */
   box-shadow: rgb(106, 182, 220) 0px 0px 9px 0px;
 }
 
+.d-none {
+  display: none;
+}
+
+.pres-text {
+  font-size: 1.0938rem;
+  max-width: 570px;
+}
+
 /* Services Section */
 
 .services-section,

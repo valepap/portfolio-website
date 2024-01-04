@@ -8,6 +8,12 @@ btnSect.addEventListener("click", () => {
 
   picImg.srcset = newImageSrc;
   portfolioImg.src = newImageSrc;
+
+  if (openCloseBtn.classList.contains("fa-minus")) {
+    presText.classList.remove("d-none");
+  } else {
+    presText.classList.add("d-none");
+  }
 });
 
 /* Form - Email JS */
