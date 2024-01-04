@@ -26,9 +26,13 @@
 btnSect.addEventListener("click", () => {
   openCloseBtn.classList.toggle("fa-plus");
   openCloseBtn.classList.toggle("fa-minus");
-  portfolioImg.src = openCloseBtn.classList.contains("fa-minus")
-    ? "./assets/img/FotoProfilo.png"
-    : "./assets/img/viewer-img.png";
+
+  const newImageSrc = openCloseBtn.classList.contains("fa-minus")
+    ? "./assets/img/FotoProfilo.webp"
+    : "./assets/img/viewer-img.webp";
+
+  picImg.srcset = newImageSrc;
+  portfolioImg.src = newImageSrc;
 });
 
 /* Form - Email JS */
