@@ -272,7 +272,7 @@ z-index: 2; */
 .services-section,
 .contact-section,
 .carousel-section {
-  background-image: url(../img/sfondo-servizi-copertina.webp);
+  background-image: url(../img/sfondo-servizi-copertina.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -394,7 +394,7 @@ z-index: 2; */
   .services-section,
   .contact-section,
   .carousel-section {
-    background-image: url(../img/sfondoSmartphone.webp);
+    background-image: url(../img/sfondoSmartphone.png);
   }
 }
 
