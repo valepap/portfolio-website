@@ -1,13 +1,21 @@
-btnSect.addEventListener("click", () => {
-  openCloseBtn.classList.toggle("fa-plus");
-  openCloseBtn.classList.toggle("fa-minus");
-
+function updateImages() {
+  const isMobile = window.innerWidth < 768;
   const newImageSrc = openCloseBtn.classList.contains("fa-minus")
-    ? "./assets/img/FotoProfilo.webp"
+    ? isMobile
+      ? "./assets/img/FotoProfilo.webp"
+      : "./assets/img/FotoProfilo.webp"
+    : isMobile
+    ? "./assets/img/sm-viewer.webp"
     : "./assets/img/viewer-img.webp";
 
   picImg.srcset = newImageSrc;
   portfolioImg.src = newImageSrc;
+}
+
+btnSect.addEventListener("click", () => {
+  openCloseBtn.classList.toggle("fa-plus");
+  openCloseBtn.classList.toggle("fa-minus");
+  updateImages();
 
   if (openCloseBtn.classList.contains("fa-minus")) {
     presText.classList.remove("d-none");
@@ -25,6 +33,12 @@ btnSect.addEventListener("click", () => {
     aboutTxt.classList.add("mT");
   }
 });
+
+window.addEventListener("resize", () => {
+  updateImages();
+});
+
+updateImages();
 
 /* Form - Email JS */
 const contactForm = document.querySelector(".needs-validation");
