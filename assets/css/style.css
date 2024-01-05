@@ -83,6 +83,11 @@ z-index: 2; */
 
 /* Hero Section */
 
+.hero-section,
+.carousel-section {
+  margin-top: 3.42rem;
+}
+
 .hero-section {
   margin-top: 3.42rem;
   background-image: url(../img/hero-img.webp);
@@ -339,10 +344,6 @@ z-index: 2; */
 }
 
 /* Carousel section */
-
-.carousel-section {
-  margin-top: 4.7806rem;
-}
 
 .carousel {
   max-width: 90%;

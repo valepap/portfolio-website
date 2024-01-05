@@ -48,20 +48,36 @@
     <meta name="theme-color" content="#ffffff" />
     <!-- Bootstrap v.5.3 -->
     <link
+      rel="preload"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+        crossorigin="anonymous"
+      />
+    </noscript>
 
     <!-- Font Awesome v.6.4.2-->
     <link
-      rel="stylesheet"
+      rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+    </noscript>
 
     <!-- CSS -->
     <link rel="stylesheet" href="../../assets/css/style.css" />
@@ -71,7 +87,7 @@
     <header class="fixed-top">
       <!-- Navbar -->
       <nav
-        class="navbar py-3 navbar-expand-lg bg-white"
+        class="navbar py-2 navbar-expand-lg bg-white"
         aria-label="offcanvas navbar"
         role="navigation"
         id="custom-nav"
@@ -81,7 +97,7 @@
             ><img
               src="../../assets/img/logo.png"
               alt="name of site - Home"
-              width="50"
+              width="35"
           /></a>
           <button
             class="navbar-toggler"
@@ -232,7 +248,12 @@
       >
         <!-- Carousel -->
 
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-touch="true"
+          data-bs-interval="false"
+        >
           <div class="carousel-indicators">
             <button
               type="button"
@@ -394,6 +415,7 @@
 
     <!-- Script Bootstrap v.5.3-->
     <script
+      defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
