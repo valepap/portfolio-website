@@ -1,37 +1,44 @@
+const btnSect = document.querySelectorAll(".btnSect");
+const openCloseBtn = document.querySelectorAll(".openCloseBtn");
+const picImgs = document.querySelector("#picImg");
+const portfolioImgs = document.querySelector("#portfolioImg");
+
 function updateImages() {
   const isMobile = window.innerWidth < 768;
-  const newImageSrc = openCloseBtn.classList.contains("fa-minus")
-    ? isMobile
-      ? "./assets/img/FotoProfilo.webp"
-      : "./assets/img/FotoProfilo.webp"
-    : isMobile
-    ? "./assets/img/sm-viewer.webp"
-    : "./assets/img/viewer-img.webp";
 
-  picImg.srcset = newImageSrc;
-  portfolioImg.src = newImageSrc;
+  openCloseBtn.forEach((btn) => {
+    const newImageSrc = btn.classList.contains("fa-minus")
+      ? isMobile
+        ? "./assets/img/FotoProfilo.webp"
+        : "./assets/img/FotoProfilo.webp"
+      : isMobile
+      ? "./assets/img/sm-viewer.webp"
+      : "./assets/img/viewer-img.webp";
+
+    picImgs.srcset = newImageSrc;
+    portfolioImgs.src = newImageSrc;
+  });
 }
 
-btnSect.addEventListener("click", () => {
-  openCloseBtn.classList.toggle("fa-plus");
-  openCloseBtn.classList.toggle("fa-minus");
-  updateImages();
+btnSect.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    openCloseBtn.forEach((btn) => {
+      btn.classList.toggle("fa-plus");
+      btn.classList.toggle("fa-minus");
+    });
 
-  if (openCloseBtn.classList.contains("fa-minus")) {
-    presText.classList.remove("d-none");
-    downloadBtn.classList.remove("d-none");
-    aboutTxt.classList.remove("mb-5");
-    aboutTxt.classList.add("mb-4");
-    aboutTxt.classList.remove("pb-4");
-    aboutTxt.classList.remove("mT");
-  } else {
-    presText.classList.add("d-none");
-    downloadBtn.classList.add("d-none");
-    aboutTxt.classList.remove("mb-4");
-    aboutTxt.classList.add("mb-5");
-    aboutTxt.classList.add("pb-4");
-    aboutTxt.classList.add("mT");
-  }
+    updateImages();
+
+    if (openCloseBtn[0].classList.contains("fa-minus")) {
+      presText.classList.remove("d-none");
+      downloadBtn.classList.remove("d-none");
+      aboutTxt.classList.remove("mT");
+    } else {
+      presText.classList.add("d-none");
+      downloadBtn.classList.add("d-none");
+      aboutTxt.classList.add("mT");
+    }
+  });
 });
 
 window.addEventListener("resize", () => {
