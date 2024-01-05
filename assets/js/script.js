@@ -11,8 +11,18 @@ btnSect.addEventListener("click", () => {
 
   if (openCloseBtn.classList.contains("fa-minus")) {
     presText.classList.remove("d-none");
+    downloadBtn.classList.remove("d-none");
+    aboutTxt.classList.remove("mb-5");
+    aboutTxt.classList.add("mb-4");
+    aboutTxt.classList.remove("pb-4");
+    aboutTxt.classList.remove("mT");
   } else {
     presText.classList.add("d-none");
+    downloadBtn.classList.add("d-none");
+    aboutTxt.classList.remove("mb-4");
+    aboutTxt.classList.add("mb-5");
+    aboutTxt.classList.add("pb-4");
+    aboutTxt.classList.add("mT");
   }
 });
 
