@@ -90,3 +90,5 @@ function resetForm() {
   contactForm.classList.remove("was-validated");
   successMessage.style.display = "none";
 }
+
+// Carousel
