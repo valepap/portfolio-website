@@ -377,6 +377,10 @@ button:not(:disabled) {
   .copy {
     font-size: 0.9063rem;
   }
+
+  .dev-logo {
+    width: 20px;
+  }
 }
 
 /* 576px */

@@ -4,6 +4,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const picImgs = document.querySelector("#picImg");
   const portfolioImgs = document.querySelector("#portfolioImg");
 
+  const openDrop = document.querySelector("#openDrop");
+
+  // navbar
+  if (window.innerWidth < 992) {
+    openDrop.setAttribute("data-bs-toggle", "dropdown");
+    openDrop.classList.add("dropdown-toggle");
+  } else {
+    openDrop.classList.remove("dropdown-toggle");
+  }
+
   function updateImages() {
     const isMobile = window.innerWidth < 768;
 
