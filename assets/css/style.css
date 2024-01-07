@@ -347,6 +347,7 @@ button:not(:disabled) {
 
 .carousel-section {
   margin-top: 4.5rem;
+  background-attachment: fixed;
 }
 
 /* per smartphone diventa -2.2rem */
