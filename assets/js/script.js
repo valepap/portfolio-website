@@ -173,21 +173,6 @@ document.addEventListener("DOMContentLoaded", () => {
     origin: "left",
   });
 
-  // Footer - mobile only
-
-  // Fade Down
-  ScrollReveal().reveal(".footer-reveal ", {
-    delay: 330,
-    origin: "top",
-    desktop: false,
-  });
-
-  ScrollReveal().reveal(".footer-reveal ", {
-    delay: 330,
-    origin: "left",
-    mobile: false,
-  });
-
   // right - desktop only
   ScrollReveal().reveal(".right-reveal", {
     delay: 400,
