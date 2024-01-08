@@ -353,19 +353,6 @@ button:not(:disabled) {
   background-size: cover;
 }
 
-.carousel-sec {
-  margin-top: 4.5rem;
-}
-
-.background-image {
-  left: 0;
-  background-image: url(../../assets/img/sfondoSmartphone.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
-
 /* per smartphone diventa -2.2rem */
 .carousel-indicators {
   gap: 4px;
