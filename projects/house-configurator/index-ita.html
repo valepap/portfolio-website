@@ -78,6 +78,17 @@
       />
     </noscript>
 
+    <link
+      rel="preload"
+      href="./assets/video/House Configurator.webm"
+      as="video"
+    />
+    <link
+      rel="preload"
+      href="./assets/video/House Configurator (1).mp4"
+      as="video"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="../../assets/css/style.css" />
   </head>
@@ -174,8 +185,6 @@
                       <a
                         class="dropdown-item text-uppercase"
                         href="../esplora-marte/index-ita.html"
-                        target="_blank"
-                        rel="noopener"
                         >Esplora Marte</a
                       >
                     </li>
@@ -201,8 +210,6 @@
                       <a
                         class="dropdown-item text-uppercase"
                         href="../moonhome/index-ita.html"
-                        target="_blank"
-                        rel="noopener"
                         >MoonHome</a
                       >
                     </li>
@@ -210,8 +217,6 @@
                       <a
                         class="dropdown-item text-uppercase"
                         href="../virtuality/index-ita.html"
-                        target="_blank"
-                        rel="noopener"
                         >Virtuality</a
                       >
                     </li>
@@ -323,10 +328,32 @@
                     data-bs-slide-to="9"
                     aria-label="Slide 10"
                   ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="10"
+                    aria-label="Slide 11"
+                  ></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <video controls class="img-fluid">
+                    <img
+                      src="./assets/img/anteprima.jpeg"
+                      class="d-block w-100"
+                      alt="Video Preview"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <video
+                      class="img-fluid video-element"
+                      loading="lazy"
+                      id="videoElement"
+                      controls
+                    >
+                      <source
+                        src="./assets/video/House Configurator.webm"
+                        type="video/webm"
+                      />
                       <source
                         src="./assets/video/House Configurator (1).mp4"
                         type="video/mp4"

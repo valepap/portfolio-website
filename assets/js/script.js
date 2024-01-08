@@ -61,6 +61,8 @@ document.addEventListener("DOMContentLoaded", () => {
   /* Form - Email JS */
   const contactForm = document.querySelector(".needs-validation");
   const successMessage = document.querySelector(".successMessage");
+  const loader = document.querySelector(".spinner-border");
+  const submitBtn = document.querySelector("#submitBtn");
 
   (() => {
     ("use strict");
@@ -85,10 +87,23 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   })();
 
+  function showLoader() {
+    submitBtn.style.display = "none";
+    loader.style.display = "inline-block";
+  }
+
+  function hideLoader() {
+    submitBtn.style.display = "inline-block";
+    loader.style.display = "none";
+  }
+
   function sendEmail() {
+    showLoader();
+
     emailjs
       .sendForm("service_3vss8pn", "template_mg950is", ".needs-validation")
       .then(() => {
+        hideLoader();
         successMessage.style.display = "block";
         setTimeout(() => {
           resetForm();

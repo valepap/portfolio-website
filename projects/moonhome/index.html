@@ -78,6 +78,11 @@
       />
     </noscript>
 
+    <link rel="preload" href="./assets/video/MoonHome.webm" as="video" />
+    <link rel="preload" href="./assets/video/MoonHome (1).mp4" as="video" />
+    <link rel="preload" href="./assets/video/MoonHome7.webm" as="video" />
+    <link rel="preload" href="./assets/video/MoonHome (7).mp4" as="video" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="../../assets/css/style.css" />
   </head>
@@ -174,8 +179,6 @@
                       <a
                         class="dropdown-item text-uppercase"
                         href="../house-configurator/"
-                        target="_blank"
-                        rel="noopener"
                         >House Configurator</a
                       >
                     </li>
@@ -183,8 +186,6 @@
                       <a
                         class="dropdown-item text-uppercase"
                         href="../esplora-marte/"
-                        target="_blank"
-                        rel="noopener"
                         >Esplora Marte</a
                       >
                     </li>
@@ -211,8 +212,6 @@
                       <a
                         class="dropdown-item text-uppercase"
                         href="../virtuality/"
-                        target="_blank"
-                        rel="noopener"
                         >Virtuality</a
                       >
                     </li>
@@ -312,16 +311,39 @@
                     data-bs-slide-to="7"
                     aria-label="Slide 8"
                   ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="8"
+                    aria-label="Slide 9"
+                  ></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <video controls class="img-fluid">
+                    <img
+                      src="./assets/img/anteprima.jpeg"
+                      class="d-block w-100"
+                      alt="Video Preview"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <video
+                      class="img-fluid video-element"
+                      loading="lazy"
+                      id="videoElement"
+                      controls
+                    >
+                      <source
+                        src="./assets/video/MoonHome.webm"
+                        type="video/webm"
+                      />
                       <source
                         src="./assets/video/MoonHome (1).mp4"
                         type="video/mp4"
                       />
                     </video>
                   </div>
+
                   <div class="carousel-item">
                     <img
                       src="./assets/img/MoonHome (1).png"
@@ -365,7 +387,16 @@
                     />
                   </div>
                   <div class="carousel-item">
-                    <video controls class="img-fluid" width="530">
+                    <video
+                      class="img-fluid video-element"
+                      loading="lazy"
+                      width="530"
+                      controls
+                    >
+                      <source
+                        src="./assets/video/MoonHome7.webm"
+                        type="video/webm"
+                      />
                       <source
                         src="./assets/video/MoonHome (7).mp4"
                         type="video/mp4"

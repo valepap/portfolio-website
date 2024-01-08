@@ -78,6 +78,19 @@
       />
     </noscript>
 
+    <link rel="preload" href="./assets/video/Esplora Marte.webm" as="video" />
+    <link
+      rel="preload"
+      href="./assets/video/Esplora Marte (1).mp4"
+      as="video"
+    />
+    <link rel="preload" href="./assets/video/Esplora Marte6.webm" as="video" />
+    <link
+      rel="preload"
+      href="./assets/video/Esplora Marte (6).mp4"
+      as="video"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="../../assets/css/style.css" />
   </head>
@@ -174,8 +187,6 @@
                       <a
                         class="dropdown-item text-uppercase"
                         href="../house-configurator/index-ita.html"
-                        target="_blank"
-                        rel="noopener"
                         >House Configurator</a
                       >
                     </li>
@@ -201,8 +212,6 @@
                       <a
                         class="dropdown-item text-uppercase"
                         href="../moonhome/index-ita.html"
-                        target="_blank"
-                        rel="noopener"
                         >MoonHome</a
                       >
                     </li>
@@ -210,8 +219,6 @@
                       <a
                         class="dropdown-item text-uppercase"
                         href="../virtuality/index-ita.html"
-                        target="_blank"
-                        rel="noopener"
                         >Virtuality</a
                       >
                     </li>
@@ -306,10 +313,32 @@
                     data-bs-slide-to="6"
                     aria-label="Slide 7"
                   ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="7"
+                    aria-label="Slide 8"
+                  ></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <video controls class="img-fluid">
+                    <img
+                      src="./assets/img/anteprima.jpeg"
+                      class="d-block w-100"
+                      alt="Video Preview"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <video
+                      class="img-fluid video-element"
+                      loading="lazy"
+                      id="videoElement"
+                      controls
+                    >
+                      <source
+                        src="./assets/video/Esplora Marte.webm"
+                        type="video/webm"
+                      />
                       <source
                         src="./assets/video/Esplora Marte (1).mp4"
                         type="video/mp4"
@@ -352,7 +381,16 @@
                     />
                   </div>
                   <div class="carousel-item">
-                    <video width="60%" controls class="img-fluid">
+                    <video
+                      class="img-fluid video-element"
+                      loading="lazy"
+                      width="60%"
+                      controls
+                    >
+                      <source
+                        src="./assets/video/Esplora Marte6.webm"
+                        type="video/webm"
+                      />
                       <source
                         src="./assets/video/Esplora Marte (6).mp4"
                         type="video/mp4"
