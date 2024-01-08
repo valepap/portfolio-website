@@ -262,8 +262,7 @@ button:not(:disabled) {
 /* Services Section */
 
 .services-section,
-.contact-section,
-.carousel-section {
+.contact-section {
   background-image: url(../img/sfondo-servizi-copertina.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -348,6 +347,10 @@ button:not(:disabled) {
 .carousel-section {
   margin-top: 4.5rem;
   background-attachment: fixed;
+  background-image: url(../../assets/img/sfondo-servizi-copertina.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* per smartphone diventa -2.2rem */
@@ -422,9 +425,12 @@ ul.dashed-title > li:before {
 /* 768px */
 @media (max-width: 767.98px) {
   .services-section,
-  .contact-section,
-  .carousel-section {
+  .contact-section {
     background-image: url(../img/sfondoSmartphone.png);
+  }
+
+  .carousel-section {
+    background-image: url(../../assets/img/sfondoSmartphone.png);
   }
 }
 
