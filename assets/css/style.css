@@ -346,8 +346,8 @@ button:not(:disabled) {
 
 .carousel-section {
   margin-top: 4.5rem;
-  background-attachment: fixed;
-  background-image: url(../../assets/img/sfondo-servizi-copertina.png);
+  /* background-attachment: fixed; */
+  background-image: url(../../assets/img/bg-carousel.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -430,7 +430,7 @@ ul.dashed-title > li:before {
   }
 
   .carousel-section {
-    background-image: url(../../assets/img/sfondoSmartphone.png);
+    background-image: url(../../assets/img/bg-carousel.jpeg);
   }
 }
 
