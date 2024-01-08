@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   ScrollReveal().reveal(".hero-txt", {
-    delay: 0,
+    delay: 200,
     easing: "cubic-bezier(0.5, 0, 0, 1)",
     // easing: "cubic-bezier(.215, .61, .355, 1)",
     // interval: 240,
@@ -168,9 +168,24 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Fade left
-  ScrollReveal().reveal(".portfolio-pic, .footer-section p", {
+  ScrollReveal().reveal(".portfolio-pic", {
     delay: 300,
     origin: "left",
+  });
+
+  // Footer - mobile only
+
+  // Fade Down
+  ScrollReveal().reveal(".footer-reveal ", {
+    delay: 330,
+    origin: "top",
+    desktop: false,
+  });
+
+  ScrollReveal().reveal(".footer-reveal ", {
+    delay: 330,
+    origin: "left",
+    mobile: false,
   });
 
   // right - desktop only
