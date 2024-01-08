@@ -314,13 +314,18 @@
                   ></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <!-- <img
+                  <div class="carousel-item active" id="videoSlide">
+                    <img
                       src="./assets/img/anteprima.jpeg"
-                      class="d-block w-100"
+                      class="w-100"
                       alt="Video Preview"
-                    /> -->
-                    <video class="img-fluid" loading="lazy" controls>
+                    />
+                    <video
+                      class="img-fluid video-element"
+                      loading="lazy"
+                      id="videoElement"
+                      style="display: none"
+                    >
                       <source
                         src="./assets/video/virtuality_titoli-di-testa.webm"
                         type="video/webm"
