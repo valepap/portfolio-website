@@ -65,6 +65,7 @@ $(document).ready(function () {
   //right - Mobile only
   ScrollReveal().reveal(".right-reveal", {
     delay: 500,
+    origin: "top",
     desktop: false,
   });
 
