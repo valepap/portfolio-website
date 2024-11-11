@@ -42,11 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (openCloseBtn[0].classList.contains("fa-minus")) {
         presText.classList.remove("d-none");
-        downloadBtn.classList.remove("d-none");
+        // downloadBtn.classList.remove("d-none");
         aboutTxt.classList.remove("mT");
       } else {
         presText.classList.add("d-none");
-        downloadBtn.classList.add("d-none");
+        // downloadBtn.classList.add("d-none");
         aboutTxt.classList.add("mT");
       }
     });
